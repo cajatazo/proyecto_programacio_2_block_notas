@@ -1,0 +1,108 @@
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+th {
+background-color: #2c6c8a;
+color: white;
+}
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+tr:hover {
+background-color: #ddd;
+}
+form {
+display: inline;
+}
+input[type="text"] {
+width: 50px;
+text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #3b5e55;
+    background-image: url('2024.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.email-form-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.email-form-container.minimized {
+    height: 40px;
+    overflow: hidden;
+    padding: 10px;
+    width: 200px;
+}
+
+.email-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-form-header h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.minimize-button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+    background-color: #21618c;
+}
